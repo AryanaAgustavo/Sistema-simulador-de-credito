@@ -1,0 +1,27 @@
+spring:
+  mail:
+    host: smtp.host.com
+    port: 587
+    username: mail@mail.com
+    password: secret
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+simulacao:
+  taxa-juros-por-faixa-etaria:
+    - idade-minima: 18
+      idade-maxima: 25
+      taxa-juros: 0.05
+    - idade-minima: 26
+      idade-maxima: 40
+      taxa-juros: 0.03
+    - idade-minima: 41
+      idade-maxima: 60
+      taxa-juros: 0.02
+    - idade-minima: 61
+      idade-maxima: 150
+      taxa-juros: 0.04
